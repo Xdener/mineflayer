@@ -1,0 +1,33 @@
+const mineflayer = require('mineflayer');
+
+// Replace these with your server's IP and port
+const SERVER_HOST = Minecraftplays.aternos.me';
+const SERVER_PORT = 63791;
+
+// Replace these with your bot's username and password (if needed)
+const BOT_USERNAME = 'sciurtriy';
+const BOT_PASSWORD = ''; // Leave empty if no password is required
+
+const bot = mineflayer.createBot({
+  host: Aternos ,
+  port: 63791,
+  username: security,
+  password: BOT_PASSWORD
+});
+
+bot.on('login', () => {
+  console.log(`Bot ${security} has logged in.`);
+});
+
+bot.on('chat', (username, message) => {
+  if (security ) return;
+  console.log(`${username}: ${message}`);
+
+  // Example: Echo the message back
+  bot.chat(message);
+});
+
+bot.on('kicked', (reason) => {
+  console.log(`Bot was kicked: ${reason}`);
+});
+
